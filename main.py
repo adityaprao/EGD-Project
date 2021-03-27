@@ -8,7 +8,7 @@ from statsmodels.tsa.api import VAR
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.tools.eval_measures import rmse, aic
 
-filepath = 'raw_values.csv'
+filepath = 'https://raw.githubusercontent.com/prabhuvaibhav/EGD-Project/main/raw-values.csv'
 df = pd.read_csv(filepath, parse_dates=['date'], index_col='date')
 print(df.shape)
 df.tail()
